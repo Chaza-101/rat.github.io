@@ -12,13 +12,14 @@ html {
 }
 
 
-
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+
+/* general stuff below */
 
 body {
  background: #2C2C2C;
  color: #FFF9EA;
-	
 }
 
 #container {
@@ -38,21 +39,29 @@ h2,p{
 	font-family: "Alice", serif;
 }
 
+/*navigation stuff below*/
 
-
-img{
+#logo{
 max-width: 90px;
+display: inline-block;
 }
+
+figcaption a{
+	font-family: "Alice", serif;
+	color: #B41A1A;
+	text-decoration: none;
+}
+
 
 nav ul{
     list-style:none;
 	text-align: end;
-    background-color: #FFF9EA;
-	padding: 16px;
+	padding-bottom: 16px;
+    background-color: #FFF9EA;    
 }
 
 nav li{
-    text-align: end;
+    text-align: left;
     display: inline;
 }
      
@@ -68,6 +77,44 @@ nav a:hover {
     color: #B41A1A;
 }
 
+h3{
+	color: #9C978A;
+	font-family: "Averia Serif Libre", serif;
+	padding-top:16px;
+}
+
+
+h2{
+	font-size: 4px;
+	padding-left: 160px;
+	padding-right: 160px;
+}	
+
+footer p{
+	text-align:left;
+	padding-left:16px;
+}
+/* main page stuff below */
+
+#email{
+	text-align: left;
+	text-indent: 3em;
+}
+
+
+/*research stuff below*/
+
+.re{
+	background: #590000;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.re1image,.re2image,.re3image{
+	transition: transform .2s;
+}
+.re1image:hover,.re2image:hover,.re3image:hover{
+	 transform: scale(1.2);
+}
 
 
 
@@ -83,18 +130,14 @@ You can adjust the min-width numbers below, and add as many new media queries as
 @media all and (min-width: 769px) {
 
 #main{
-	padding-left: 16px;
-	padding-right: 16px;
+	padding-left: 32px;
+	padding-right: 32px;
 	padding-top: 16px;
 }
 
-.about{
-	flex-direction:column;
-}
-
-	
 h1{
 	font-size: 32px;
+	padding-bottom: 16px;
 }
 
 h2{
@@ -102,49 +145,103 @@ h2{
 }	
 
 p{
-	font-size:12px;
+	font-size: 16px;
+	word-spacing: 2px;
+	line-height: 1.12;
 }
 
+footer p{
+	font-size:8px;
+}
+
+figcaption a{
+	font-size: 8px;
+}
+/* main page stuff below */
+
+#email{
+	padding: 32px;
+	font-size:14px;
+	word-spacing: 6px;
+	line-height: 1.5;
+}
+
+#imgmain{
+	max-width: 500px;
+}
+
+.in{
+	padding: 32px;
+	align-items: center;
+}
+
+
+/* research stuff below */
+
+.re{
+	display: flex;
+	flex-direction: column;
+	margin: 16px;
+	padding: 32px 40px;
+	border-radius: 15px;
+	gap:48px;
+	align-items:center;
+}
+
+#retext{
+	text-align: left;
+}
+
+#retext2{
+	text-align: left;
+	font-size: 12px;
+}
+
+/* about stuff below */
+.about{
+	display: flex;
+	flex-direction: row;
+}
+
+#abimage{
+	max-width: 300px;
+}
+
+/* join us stuff below */
+
+.don{
+	display: flex;
+	align-items:center;
+}
+
+#tote{
+	max-width: 300px;
+}
+
+.agree{
+	text-align: right;
+	padding-right: 16px;
+}
 	
 } /* closes 769px+ */
-
 
 
 
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 
+
+/*general stuff below */
+
 #main{
-	padding-left: 48px;
-	padding-right: 48px;
+	padding-left: 56px;
+	padding-right: 56px;
 	padding-top: 32px;
 }
 
-.about{
-	display: flex;
-	flex-direction: row;
-}
-
-.re1{
-	display: flex;
-	flex-direction: row;
-}
-
-
-.re2{
-	display: flex;
-	flex-direction: row;
-}
-
-
-.re3{
-	display: flex;
-	flex-direction: row;
-}
-
-
 h1{
 	font-size: 48px;
+	padding-bottom: 32px;
 }
 
 h2{
@@ -152,12 +249,86 @@ h2{
 }	
 
 p{
-	font-size:16px;
+	font-size: 24px;
+	word-spacing: 5px;
+	line-height: 1.12;
+}
+
+footer p{
+	font-size:12px;
+}
+
+figcaption a{
+	font-size: 12px;
+}
+/* main page stuff below */
+
+#email{
+	padding: 48px;
+	font-size:20px;
+	word-spacing: 12px;
+	line-height: 1.5;
+}
+
+#imgmain{
+	max-width: 700px;
+}
+
+.in{
+	display: flex;
+	padding: 32px;
+	align-items: center;
+	gap: 32px;
 }
 
 
+/* research stuff below */
 
-	
+.re{
+	display: flex;
+	flex-direction: row;
+	margin: 32px;
+	padding: 32px 40px;
+	border-radius: 32px;
+	gap:48px;
+	align-items:center;
+}
+
+#retext{
+	text-align: left;
+}
+
+#retext2{
+	text-align: left;
+	font-size: 20px;
+}
+
+
+/* about stuff below */
+.about{
+	display: flex;
+	flex-direction: row;
+	padding: 16x;
+}
+
+#abimage{
+	max-width: 300px;
+}
+
+/* join us stuff below */
+
+.don{
+	display: flex;
+}
+
+#tote{
+	max-width: 400px;
+}
+
+.agree{
+	text-align: right;
+	padding-right: 64px;
+}
 } /* closes 1024px+ */
 
 
