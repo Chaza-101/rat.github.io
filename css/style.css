@@ -28,6 +28,8 @@ body {
 
 #main{
 	text-align: center;
+	margin: auto;
+	max-width: 1500px;
 }
 
 h1{
@@ -116,6 +118,11 @@ footer p{
 	 transform: scale(1.2);
 }
 
+.don{
+	display: flex;
+	margin: auto;
+	max-width: 2000px;
+}
 
 
 
@@ -174,7 +181,6 @@ figcaption a{
 	padding: 32px;
 	align-items: center;
 }
-
 
 /* research stuff below */
 
@@ -287,11 +293,13 @@ figcaption a{
 .re{
 	display: flex;
 	flex-direction: row;
-	margin: 32px;
+	margin: auto;
+	margin-bottom: 32px;
 	padding: 32px 40px;
 	border-radius: 32px;
 	gap:48px;
 	align-items:center;
+	max-width: 2000px;
 }
 
 #retext{
@@ -309,6 +317,8 @@ figcaption a{
 	display: flex;
 	flex-direction: row;
 	padding: 16x;
+	margin:auto;
+	max-width: 2500px;
 }
 
 #abimage{
@@ -317,12 +327,12 @@ figcaption a{
 
 /* join us stuff below */
 
-.don{
-	display: flex;
-}
 
 #tote{
-	max-width: 400px;
+	max-width: 1000px;
+}
+.dontext{
+	max-width:1000px;
 }
 
 .agree{
