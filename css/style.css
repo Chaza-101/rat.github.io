@@ -103,6 +103,10 @@ footer p{
 	text-indent: 3em;
 }
 
+#imgmain{
+	max-width: 300px;
+	margin: auto;
+}
 
 /*research stuff below*/
 
